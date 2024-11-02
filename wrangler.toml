@@ -2,3 +2,11 @@ name = "unifi-cloudflare-ddns"
 main = "src/index.js"
 compatibility_date = "2023-04-23"
 workers_dev = false
+
+routes = [
+  { pattern = "ddns.kasetty.com/*", zone_name = "kasetty.com" }
+]
+
+[observability]
+enabled = true
+head_sampling_rate = 1 
